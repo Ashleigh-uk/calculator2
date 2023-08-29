@@ -1,0 +1,99 @@
+:root{
+  --white:white;
+  --light-gray:rgb(235, 226, 226);
+  --dark-gray: rgb(61, 61, 61);
+  --red:rgb(124, 2, 2);
+  --blue:rgb(2, 2, 148);
+  --black:black;
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+#calculator {
+  display: grid;
+  grid-template-areas:
+  "display display display display"
+  "clear clear divide multiply"
+  "seven eight nine subtract"
+  "four five six add"
+  "one two three equals"
+  "zero zero decimal equals";
+grid-template-columns: 100px 100px 100px 100px;
+gap:20px;
+padding:50px;
+padding-top:10px;
+margin-top:20px;
+border-radius:20px;
+background-color:var(--black)
+}
+.lightgray{
+  background-color:var(--light-gray);
+}
+.dark-gray{
+  background-color:var(--dark-gray);
+  color:var(--white);
+}
+.red{
+  background-color:var(--red);
+  color:var(--white);
+}
+.blue{
+  background-color:var(--blue);
+  color:var(--white);
+}
+button{
+  height:100px;
+  font-size:24px;
+  border:none;
+  cursor:pointer;
+  border-radius:20px;
+  width:100%;
+  transform:transform 0.1s ease-in-out;
+}
+button:hover{
+  border:1px solid rgb(0, 255, 21);
+}
+button:active{
+  transform:scale(0.95);
+}
+#answer{
+  height:48px;
+  font-size:48px;
+  color:orange;
+}
+#equation{
+  height:34px;
+  font-size:34px;
+  color:var(--white);
+}
+#display{
+  grid-area:display;
+}
+#clear{
+  grid-area:clear;
+}
+#zero{
+  grid-area:zero;
+}
+#equals{
+  grid-area:equals;
+  height:100%;
+}
+#divide{grid-area:divide;}
+#multiply{grid-area:multiply;}
+#subtract{grid-area:subtract;}
+#add{grid-area:add;}
+#decimal{grid-area:decimal;}
+#three{grid-area:three;}
+#one{grid-area:one;}
+#two{grid-area:two;}
+#four{grid-area:four;}
+#five{grid-area:five;}
+#six{grid-area:six;}
+#seven{grid-area:seven;}
+#eight{grid-area:eight;}
+#nine{grid-area:nine;}
